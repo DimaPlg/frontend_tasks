@@ -1,0 +1,38 @@
+/*нижайший приоритет*/
+/* body{
+    background-image: url(../img/picture1.jpg);
+    background-size: contain;
+} */
+
+h2{
+    background-color: khaki;
+    width: 35%;
+}
+/*чуть выше*/
+[data-test="test-attribute"]{
+    color: palegreen;
+    font-size: 30px;
+}
+/*еще выше*/
+.text_aling_right {
+    text-align: right;
+  }
+  /*высочайший*/
+/* #id2{
+
+} */
+
+.container{
+    background-color: aqua;
+    /* отступы внутри блока */
+    padding: 10px 20px;
+    /* отступы от внешних блока */
+    margin:  20px 20px 20px 20px;
+    height: 100px;
+    width: 200px;
+    border-radius: 50%;
+
+    text-align: center;
+
+
+}

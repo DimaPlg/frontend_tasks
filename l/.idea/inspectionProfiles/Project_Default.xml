@@ -1,0 +1,28 @@
+<component name="InspectionProjectProfileManager">
+  <profile version="1.0">
+    <option name="myName" value="Project Default" />
+    <inspection_tool class="PyPep8NamingInspection" enabled="true" level="WEAK WARNING" enabled_by_default="true">
+      <option name="ignoredErrors">
+        <list>
+          <option value="N802" />
+        </list>
+      </option>
+    </inspection_tool>
+    <inspection_tool class="PyUnresolvedReferencesInspection" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="ignoredIdentifiers">
+        <list>
+          <option value="django.db.models.fields.related.ManyToManyField.all" />
+          <option value="class_selenium.student" />
+          <option value="class_selenium.student_1" />
+          <option value="class_selenium.Student" />
+          <option value="class_selenium.self" />
+          <option value="class_selenium.age" />
+          <option value="class_selenium.name" />
+          <option value="class_selenium.show_info.spec" />
+          <option value="class_selenium.show_msg.*" />
+          <option value="class_selenium.show_info.*" />
+        </list>
+      </option>
+    </inspection_tool>
+  </profile>
+</component>

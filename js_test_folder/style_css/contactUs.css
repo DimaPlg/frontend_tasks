@@ -1,0 +1,10 @@
+.info__user{
+    width: max-content;
+    height: max-content;
+    align-self: center;
+    background-color: cadetblue;
+}
+
+.itemBox{
+    align-self: center;
+}
