@@ -1,0 +1,51 @@
+.newsPage{
+    display: flex;
+}
+.newsLine{
+    width: 70%;
+    height: 100%;
+    margin-left: 4.5%;
+    align-self: center;
+}
+.news{
+    display: flex;
+    width: 96%;
+    height: 24%;
+    margin-left: 2%;
+    margin-right: 2%;
+    align-self: center;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+.imgNews{
+    padding: 5px;
+    height: content;
+    width: auto;
+}
+.newsContent{
+    margin: 10px;
+}
+.mewsName{
+    text-align: center;
+}
+.itemsShop{
+    position: relative; 
+    margin-right: 4.5%;
+    width: 20%;
+    height: auto;
+}
+.item{
+    justify-content: center;
+    right: 20%;
+    padding: 5px;
+}
+.itemShopImg{
+    width: 100%;
+    height: content;
+    margin: 2%;
+    align-self: center;
+}
+.itemLinkPage{
+    font-size: 18px;
+    padding: 6px;
+    padding-left: 15%;
+}
