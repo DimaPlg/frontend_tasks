@@ -27,6 +27,10 @@
 .mewsName{
     text-align: center;
 }
+.sourse{
+    text-align: right;
+    font-size: 15px;
+}
 .itemsShop{
     position: relative; 
     margin-right: 4.5%;

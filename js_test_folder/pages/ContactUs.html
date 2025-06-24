@@ -5,16 +5,33 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../style_css/contactUs.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <title>Document</title>
 </head>
 <body>
-    <div class="info__user">
+    <div>
         <h1>Contact Us</h1>
-        <form>
-            <input id="name" type="text" type="number" placeholder="name" class="itemBox"/>
-            <input id="password" type="text" placeholder="password"/>
-            <input id="email" type="email" placeholder="email">
-            <button type="submit">Send data</button>
+        <form class="formStyle" method="POST" action="/go-to-server">
+            <div class="info__user">
+                <div class="enterUserInfoBox">
+                    <h2>Name:</h2>
+                    <input id="name" type="text" placeholder="name" class="itemBox"/>
+                </div>
+                <div class="enterUserInfoBox">
+                    <h2>Password:</h2>
+                    <input id="password" type="text" placeholder="password"/>
+                </div>
+                <div class="enterUserInfoBox">
+                    <h2>Email:</h2>
+                    <input id="email" type="email" placeholder="email">
+                </div>             
+            </div>
+            <textarea id="massage" placeholder="Massage"></textarea>
+            <div class="sendButtonStyle">
+                <button id="sendButton" type="submit">Send data</button>
+            </div>
         </form>
     </div>
 </body>
