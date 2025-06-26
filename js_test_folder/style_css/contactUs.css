@@ -5,6 +5,25 @@ body{
     background-image: url(../img/backgr.jpg);
 }
 
+.title{
+    font-size: 60px;
+    color: burlywood;
+
+    @media screen and (max-width: 2560px) {
+        font-size: 80px;
+    }
+
+    @media screen and (max-width: 1920px) {
+        font-size: 60px;
+    }
+    @media screen and (max-width: 1024px) {
+        font-size: 32px;
+    }
+    @media screen and (max-width: 390px) {
+        font-size: 16px;    
+    }
+}
+
 .formStyle{
     width: 80%;
     height: 100%;
@@ -23,55 +42,72 @@ body{
 }
 
 #name{
-    width: 100%;
+    width: 94%;
     height: auto;
     font-size: 20px;
     border-radius: 5px;
-    border: 2px solid rgb(28, 133, 219);
-    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    border: 1px solid rgb(28, 133, 219);
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    @media screen and (max-width: 390px) {
+        font-size: 16px;    
+    }
+
+
 }
-#name:focus{
+/* #name:focus{
     border: 5px solid tomato; 
-}
+} */
 #password{
     font-size: 20px;
-    width: 100%;
+    width: 94%;
     height: auto;
     border-radius: 5px;
-    border: 2px solid rgb(28, 133, 219);
-    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    border: 1px solid rgb(28, 133, 219);
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    @media screen and (max-width: 390px) {
+        font-size: 16px;    
+    }
 }
-#password:focus{
+/* #password:focus{
     border: 5px solid tomato; 
-}
+} */
 #email{
     font-size: 20px;
-    width: 100%;
+    width: 94%;
     height: auto;
     border-radius: 5px;
-    border: 2px solid rgb(28, 133, 219);
-    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    border: 1px solid rgb(28, 133, 219);
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    @media screen and (max-width: 390px) {
+        font-size: 16px;    
+    }
 }
-#email:focus{
+/* #email:focus{
     border: 5px solid tomato; 
-}
+} */
 #massage{
     font-size: 20px;
     width: 90%;
     height: 400px;
     margin: 5%;
     border-radius: 5px;
-    border: 2px solid rgb(28, 133, 219);
-    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    border: 1px solid rgb(28, 133, 219);
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    @media screen and (max-width: 390px) {
+        font-size: 16px;    
+    }
 }
-#massage:focus{
+/* #massage:focus{
     border: 5px solid tomato; 
-}
+} */
 .sendButtonStyle{
     width: 40%;
     height: 80px;
     margin: 10px auto;
     align-content: center;
+    @media screen and (max-width: 390px) {
+        font-size: 16px;    
+    }
 }
 #sendButton{
     position: relative;
@@ -84,9 +120,14 @@ body{
     box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5);
     border-radius: 10px;
     transition: background-color 2s ease-out;
+    @media screen and (max-width: 390px) {
+        font-size: 16px;    
+    }
 }
 button:hover{
-    background-color: rgb(201, 245, 247);
+    @media screen and (hover: hover) {
+        background-color:  rgb(201, 245, 247);
+    }
 }
 button::before{
     position: absolute;
@@ -97,7 +138,18 @@ button::before{
     height: auto;
 }
 
+h2{
+    @media screen and (max-width: 2560px) {
+        font-size: 80px;
+    }
 
-/* .itemBox{
-    align-self: center;
-} */
+    @media screen and (max-width: 1920px) {
+        font-size: 60px;
+    }
+    @media screen and (max-width: 1024px) {
+        font-size: 32px;
+    }
+    @media screen and (max-width: 390px) {
+        font-size: 16px;    
+    }
+}
