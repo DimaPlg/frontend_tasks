@@ -46,11 +46,36 @@
       <li><a href="./ContactUs.html" title="Contact Us"> Conact Us</a></li>
     </ul>
 
-    <br/>
-    <br/>
-    <br/>
-    <br/>
-    <br/>
+    <script>
+      function buble_sort(arr){
+        index = 1
+        len = arr.length
+        reserved = 0
+        while (true){
+          if (arr[index - 1] < arr[index]){
+            reserved = arr[index]
+            arr[index] = arr[index - 1]
+            arr[index - 1] = reserved
+            
+          }
+          if (index > len - 1){   
+            if(len < 1){
+              return arr
+            }
+            else{
+              index = 0
+              len --
+            }
+          }
+          index++
+          }
+          
+        }
+        
 
+      ar = [2,4,1,13,12]
+      console.log(buble_sort(ar))
+      console.log('HI')
+    </script>
   </body>
 </html>
