@@ -15,6 +15,18 @@ async function fetchData() {
         }
     });
     console.log(res_ar)
+
+    const divElement = document.createElement('div');
+    divElement.classList.add('new-div');
+    document.body.appendChild(divElement)
+
+    const text_box = document.createElement('p');
+    text_box.classList.add('text');
+    text_box.innerText = 'Hi guys!'
+    divElement.appendChild(text_box)
+
+
+
 }
 
 fetchData();
