@@ -4,7 +4,7 @@
     height: 20%;
     margin: 1%;
     background-color: gainsboro;
-    display: flex;
+    /* display: flex;  */
     text-align: center;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
     border-radius: 10%;

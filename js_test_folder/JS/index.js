@@ -9,24 +9,75 @@ async function fetchData() {
 
     let res_ar = []
 
-    ar.forEach(element => {
-        if (element.price > 30 && element.rating.rate > 3) {
+    // ar.forEach(element => {
+    //     if (element.price > 30 && element.rating.rate > 3) {
+    //         res_ar.push(element)
+    //     }
+    // });
+    // console.log(res_ar)
+
+        ar.forEach(element => {
             res_ar.push(element)
-        }
     });
-    console.log(res_ar)
 
-    const divElement = document.createElement('div');
-    divElement.classList.add('new-div');
-    document.body.appendChild(divElement)
+    const divElement = document.createElement('ul');
+    divElement.classList.add('list_style')
+    document.body.appendChild(divElement);
 
-    const text_box = document.createElement('p');
-    text_box.classList.add('text');
-    text_box.innerText = 'Hi guys!'
-    divElement.appendChild(text_box)
+    let li_item = document.createElement('li')
+    divElement.appendChild(li_item)
 
+    let row_item = document.createElement('div');
+    row_item.classList.add('conteiner')
+    li_item.appendChild(row_item)
 
+    let counter = 0
+    res_ar.forEach(element => {
+        
+        if(counter % 4 === 0){
+            li_item = document.createElement('li')
+            divElement.appendChild(li_item)
 
+            row_item = document.createElement('div');
+            row_item.classList.add('conteiner')
+            li_item.appendChild(row_item)
+            console.log(counter)
+        }
+    const item = document.createElement('div');
+    item.classList.add('cart');
+    row_item.appendChild(item);
+
+    const img_item = document.createElement('img');
+    img_item.classList.add('img_aling');
+    img_item.src = element.image;
+    img_item.alt = 'Описание изображения';
+    item.appendChild(img_item);
+
+    const title_item = document.createElement('h2');
+    title_item.classList.add('title_description');
+    title_item.innerText = element.title;
+    item.appendChild(title_item);
+
+    const desc_item = document.createElement('p');
+    desc_item.classList.add('description');
+    desc_item.innerText = element.description;
+    item.appendChild(desc_item)
+
+    const price_item = document.createElement('p');
+    price_item.classList.add('price__style');
+    price_item.innerText = 'Price: '+ element.price;
+    item.appendChild(price_item)
+
+    const rate_item = document.createElement('p');
+    rate_item.classList.add('price__style');
+    rate_item.innerText = 'Rate: ' + element.rating.rate;
+    item.appendChild(rate_item)
+
+    counter +=1
+    });
+    
+
+    
 }
 
 fetchData();
