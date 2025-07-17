@@ -27,12 +27,18 @@
   }
   .description{
     margin: 4%;
-    height: 30%;
+    max-height: 25%;
   }
   .price__style{
     padding-bottom: 20px;
     text-align: bottom;
     text-shadow: 1px 1px 1px black;
+  }
+
+  .button_st{
+    width: 50%;
+    height: 15px;
+    margin: 5px;
   }
   .button_style{
     box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
