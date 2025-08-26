@@ -50,19 +50,19 @@ class AddingStack(Stack):
         return self.__sum
 
 
-# stackObject1 = Stack()
-# stackObject2 = Stack()
-# stackObject1.push(3)
-# stackObject2.push(stackObject1.pop())
-# print(stackObject2.pop())
+stackObject1 = Stack()
+stackObject2 = Stack()
+stackObject1.push(3)
+stackObject2.push(stackObject1.pop())
+print(stackObject2.pop())
 
-# littleStack = AddingStack()
-# anotherStack = AddingStack()
-# funnyStack = AddingStack()
-# littleStack.push(1)
-# anotherStack.push(littleStack.pop() + 1)
-# funnyStack.push(anotherStack.pop() - 2)
-# print(funnyStack.pop())
+littleStack = AddingStack()
+anotherStack = AddingStack()
+funnyStack = AddingStack()
+littleStack.push(1)
+anotherStack.push(littleStack.pop() + 1)
+funnyStack.push(anotherStack.pop() - 2)
+print(funnyStack.pop())
 
 # l = AddingStack()
 # l.push(2)
@@ -123,13 +123,23 @@ class AddingStack(Stack):
 # print(exampleObject1.__dict__, exampleObject1.counter)
 # print(exampleObject2.__dict__, exampleObject2.counter)
 # print(exampleObject3.__dict__, exampleObject3.counter)
+#
+# class ExampleClass:
+#     varia = 1
+#     def __init__(self, val):
+#         ExampleClass.varia = val
+#
+# print(ExampleClass.__dict__)
+# exampleObject = ExampleClass(2)
+# print(ExampleClass.__dict__)
+# print(exampleObject.__dict__)
 
-class ExampleClass:
-    varia = 1
-    def __init__(self, val):
-        ExampleClass.varia = val
 
-print(ExampleClass.__dict__)
-exampleObject = ExampleClass(2)
-print(ExampleClass.__dict__)
-print(exampleObject.__dict__)
+class Sipl:
+    c = 0
+    pass
+
+t = Sipl
+# print(t.c)
+# print(Sipl.__dict__)
+
